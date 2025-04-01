@@ -1,54 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
 body {
-    font-family: Poppins, sans-serif;
-    background-color: #f4f4f9;
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(to right, #007BFF, #6610f2);
     color: #333;
     margin: 0;
-    padding: 0;
+    padding: 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    min-height: 100vh;
 }
 
 .container {
     max-width: 800px;
-    margin: 50px auto;
     background: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.15);
+    text-align: center;
 }
 
 header {
-    text-align: center;
-    border-bottom: 1px solid #007BFF;
-    padding-bottom: 8px;
-    margin-bottom: 15px;
+    border-bottom: 3px solid #007BFF;
+    padding-bottom: 15px;
+    margin-bottom: 20px;
 }
 
 h1 {
     color: #007BFF;
-    font-size: 26px;
+    font-size: 28px;
+    font-weight: 600;
 }
 
 h2 {
-    border-bottom: 1px solid #ddd;
-    padding-bottom: 4px;
-    font-size: 20px;
+    border-bottom: 2px solid #ddd;
+    padding-bottom: 8px;
+    font-size: 22px;
     color: #444;
-    margin-bottom: 10px;
 }
 
 ul {
     list-style-type: none;
     padding: 0;
+    text-align: left;
 }
 
 ul li {
-    background: #f8f9fa;
-    padding: 6px;
-    margin: 4px 0;
-    border-radius: 4px;
-    font-size: 15px;
+    background: #f0f8ff;
+    padding: 12px;
+    margin: 6px 0;
+    border-radius: 8px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    transition: all 0.3s ease-in-out;
+}
+
+ul li:hover {
+    background: #d0e8ff;
+    transform: scale(1.02);
 }
 
 a {
@@ -62,11 +73,17 @@ a:hover {
 }
 
 footer {
-    text-align: center;
-    margin-top: 15px;
-    font-size: 14px;
+    margin-top: 20px;
+    font-size: 16px;
     color: #666;
+    background: #f8f9fa;
+    padding: 15px;
+    border-radius: 8px;
 }
+
+
+
+
 
 
 
