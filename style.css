@@ -1,41 +1,3 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f9;
-    color: #333;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    justify-content: center;
-}
-
-.container {
-    max-width: 800px;
-    margin: 50px auto;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-header {
-    text-align: center;
-    border-bottom: 2px solid #007BFF;
-    padding-bottom: 10px;
-    margin-bottom: 20px;
-}
-
-h1 {
-    color: #007BFF;
-    font-size: 26px;
-}
-
-h2 {
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 5px;
-    font-size: 20px;
-    color: #444;
-}
-
 ul {
     list-style-type: none;
     padding: 0;
@@ -43,27 +5,26 @@ ul {
 
 ul li {
     background: #f8f9fa;
-    padding: 8px;
+    padding: 10px;
     margin: 5px 0;
     border-radius: 5px;
-}
-
-a {
-    color: #007BFF;
-    text-decoration: none;
+    display: flex;
+    align-items: center; /* Garante alinhamento correto */
     font-weight: bold;
 }
 
-a:hover {
+ul li a {
+    color: #007BFF; /* Mantém os links em azul */
+    text-decoration: none;
+}
+
+ul li a:hover {
     text-decoration: underline;
 }
 
-
-footer {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 14px;
-    color: #666;
+/* Garantindo que os itens tenham espaçamento uniforme */
+ul li span {
+    flex-grow: 1;
 }
 
 
