@@ -34,10 +34,10 @@ h1 {
 }
 
 h2 {
-    border-bottom: 2px solid #ddd;
-    padding-bottom: 8px;
+     border-bottom: 2px solid #007BFF; /* Azul para destacar os títulos */
+    padding-bottom: 5px;
     font-size: 22px;
-    color: #444;
+    color: #007BFF;
 }
 
 ul {
@@ -48,9 +48,9 @@ ul {
 
 ul li {
     background: #f0f8ff;
-    padding: 12px;
-    margin: 6px 0;
-    border-radius: 8px;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 5px;
     font-weight: bold;
     display: flex;
     align-items: center;
@@ -69,7 +69,9 @@ a {
 }
 
 a:hover {
+   color: #0056b3;
     text-decoration: underline;
+    transition: 0.3s;
 }
 
 footer {
