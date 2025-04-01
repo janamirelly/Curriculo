@@ -1,4 +1,3 @@
-# Currículo de Janayna Mirelly
 
 Bem-vindo ao meu currículo online!
 
