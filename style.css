@@ -106,6 +106,43 @@ a:hover {
   .section ul {
     padding-left: 15px;
   }
+
+  .contact-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
+}
+
+.contact-links li {
+  margin-right: 15px;
+}
+
+.contact-links a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.contact-links a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .contact-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .contact-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}
+
+
 }
 
 
