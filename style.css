@@ -71,6 +71,44 @@ a:hover {
   text-decoration: underline;
 }
 
+@media only screen and (max-width: 600px) {
+  body {
+    padding: 10px;
+  }
+
+  .container {
+    padding: 20px;
+    border-radius: 8px;
+  }
+
+  h1 {
+    font-size: 1.8em;
+  }
+
+  .tagline {
+    font-size: 1em;
+  }
+
+  .links {
+    font-size: 0.9em;
+    flex-direction: column;
+  }
+
+  .links a {
+    display: inline-block;
+    margin: 5px 5px 5px 0;
+  }
+
+  .section h2 {
+    font-size: 1.2em;
+  }
+
+  .section ul {
+    padding-left: 15px;
+  }
+}
+
+
 
 
 
