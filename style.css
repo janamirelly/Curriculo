@@ -149,3 +149,26 @@ a:hover {
     margin-bottom: 10px;
   }
 }
+
+@media print {
+  body {
+    zoom: 90%; /* Ajusta o tamanho do conteúdo (pode testar 80-95%) */
+  }
+
+  .container {
+    page-break-inside: avoid; /* evita quebras de página dentro do container */
+  }
+
+  .section,
+  .competencias,
+  .soft-skills {
+    page-break-inside: avoid; /* impede que essas seções se quebrem no meio */
+  }
+
+  /* Remove sombras e fundos para economizar tinta e deixar mais clean */
+  .container {
+    box-shadow: none;
+    background: white;
+  }
+}
+
