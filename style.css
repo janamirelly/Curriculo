@@ -171,4 +171,18 @@ a:hover {
     background: white;
   }
 }
+@media print {
+  p {
+    page-break-inside: avoid; /* evita quebras dentro do parágrafo */
+  }
+
+  .section {
+    page-break-inside: avoid; /* evita quebra dentro da seção */
+  }
+
+  .section:last-child {
+    page-break-after: avoid; /* impede quebra depois da última seção */
+  }
+}
+
 
