@@ -103,6 +103,27 @@ a:hover {
 }
 
 
+.cards-container {
+  display: flex;
+  gap: 15px; /* Espaço entre os cards */
+  flex-wrap: wrap; /* Faz os cards quebrarem para a próxima linha se necessário */
+}
+
+.card {
+  background-color: #f5f5f5; /* Cor leve de fundo */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  flex: 1 1 250px; /* Largura mínima 250px e se adapta ao espaço */
+}
+.card a {
+  color: #0066cc;
+  text-decoration: none;
+}
+.card a:hover {
+  text-decoration: underline;
+}
+
 @media only screen and (max-width: 600px) {
   body {
     padding: 10px;
