@@ -115,10 +115,16 @@ a:hover {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
   flex: 1 1 250px; /* Largura mínima 250px e se adapta ao espaço */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 160px;
+  
 }
 .card a {
   color: #0066cc;
   text-decoration: none;
+  margin-top: 10px;
 }
 .card a:hover {
   text-decoration: underline;
