@@ -123,10 +123,14 @@ a:hover {
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   flex: 1 1 250px; /* Largura mínima 250px e se adapta ao espaço */
+  display: flex;               /* transforma o card em flex container */
+  flex-direction: column;      /* organiza conteúdo em coluna */
+  justify-content: space-between; /* empurra o link para o final */
 }
 .card a {
   color: #0066cc;
   text-decoration: none;
+  margin-top: auto;
 }
 .card a:hover {
   text-decoration: underline;
