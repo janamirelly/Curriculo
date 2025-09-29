@@ -1,199 +1,173 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background: #f0f2f5;
-  margin: 0;
-  padding: 20px;
-  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+  color: #333;
 }
 
 .container {
-  background-color: #fff;
-  max-width: 900px;
-  margin: auto;
-  padding: 40px;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  background-color: #fff;
+  max-width: 900px;
+  margin: auto;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 h1 {
-  font-size: 2.5em;
-  margin-bottom: 5px;
-  color: #005b96;
+  font-size: 2.5em;
+  margin-bottom: 5px;
+  color: #005b96;
 }
 
 .tagline {
-  font-size: 1.1em;
-  margin-bottom: 15px;
-  color: #222;
+  font-size: 1.1em;
+  margin-bottom: 15px;
+  color: #222;
 }
 
 .contact-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-  list-style: none;
-  padding: 0;
-  margin: 0 0 20px 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 20px 0;
 }
 
 .contact-links li {
-  margin-right: 15px;
+  margin-right: 15px;
 }
 
 .contact-links a {
-  color: #0077cc;
-  text-decoration: none;
-  font-weight: 500;
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 500;
 }
 
 .contact-links a:hover {
-  text-decoration: underline;
+  text-decoration: underline;
 }
 
 .section {
-  margin-bottom: 30px;
+  margin-bottom: 30px;
 }
 
 .section h2 {
-  color: #005b96;
-  border-bottom: 2px solid #e0e0e0;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
-  font-weight: 600;
+  color: #005b96;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+  font-weight: 600;
 }
 
 .section ul {
-  padding-left: 20px;
+  padding-left: 20px;
 }
 
 .section ul li {
-  margin-bottom: 10px;
-  line-height: 1.6;
-}
-
-/* Estilização para a seção Projetos, agora em formato de lista (UL/LI) */
-.section ul li strong {
-    font-weight: 600;
-    margin-right: 5px;
-}
-.section ul li a {
-    margin-left: 10px;
-    font-size: 0.9em;
+  margin-bottom: 10px;
+  line-height: 1.6;
 }
 
 a {
-  color: #0077cc;
-  text-decoration: none;
+  color: #0077cc;
+  text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: underline;
 }
 
 .links {
-  font-size: 0.95em;
-  margin-bottom: 30px;
+  font-size: 0.95em;
+  margin-bottom: 30px;
 }
 
 .links a {
-  color: #0077cc;
-  text-decoration: none;
-  margin-right: 10px;
+  color: #0077cc;
+  text-decoration: none;
+  margin-right: 10px;
 }
 
 .links a:hover {
-  text-decoration: underline;
+  text-decoration: underline;
 }
 
 .institution-reference {
-  font-size: 0.95em;
-  color: #555;
-  margin-top: 12px;
-  line-height: 1.5;
+  font-size: 0.95em;
+  color: #555;
+  margin-top: 12px;
+  line-height: 1.5;
 }
 
-
-/* --- INÍCIO DA MEDIA QUERY --- */
 
 @media only screen and (max-width: 600px) {
-  body {
-    padding: 10px;
-  }
+  body {
+    padding: 10px;
+  }
 
-  .container {
-    padding: 20px;
-    border-radius: 8px;
-  }
+  .container {
+    padding: 20px;
+    border-radius: 8px;
+  }
 
-  h1 {
-    font-size: 1.8em;
-  }
+  h1 {
+    font-size: 1.8em;
+  }
 
-  .tagline {
-    font-size: 1em;
-  }
+  .tagline {
+    font-size: 1em;
+  }
 
-  .links {
-    font-size: 0.9em;
-    flex-direction: column;
-  }
+  .links {
+    font-size: 0.9em;
+    flex-direction: column;
+  }
 
-  .links a {
-    display: inline-block;
-    margin: 5px 5px 5px 0;
-  }
+  .links a {
+    display: inline-block;
+    margin: 5px 5px 5px 0;
+  }
 
-  .section h2 {
-    font-size: 1.2em;
-  }
+  .section h2 {
+    font-size: 1.2em;
+  }
 
-  .section ul {
-    padding-left: 15px;
-  }
+  .section ul {
+    padding-left: 15px;
+  }
 
-  .contact-links {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+  .contact-links {
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-  .contact-links li {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
+  .contact-links li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
 
 @media print {
-  body {
-    zoom: 90%; /* Ajusta o tamanho do conteúdo (pode testar 80-95%) */
-  }
+  body {
+    zoom: 90%; /* Ajusta o tamanho do conteúdo (pode testar 80-95%) */
+  }
 
-  .container {
-    page-break-inside: avoid; /* evita quebras de página dentro do container */
-  }
+  .container {
+    page-break-inside: avoid; /* evita quebras de página dentro do container */
+  }
 
-  .section,
-  .competencias,
-  .soft-skills {
-    page-break-inside: avoid; /* impede que essas seções se quebrem no meio */
-  }
+  .section,
+  .competencias,
+  .soft-skills {
+    page-break-inside: avoid; /* impede que essas seções se quebrem no meio */
+  }
 
-  /* Remove sombras e fundos para economizar tinta e deixar mais clean */
-  .container {
-    box-shadow: none;
-    background: white;
-  }
+  /* Remove sombras e fundos para economizar tinta e deixar mais clean */
+  .container {
+    box-shadow: none;
+    background: white;
+  }
 }
-@media print {
-  p {
-    page-break-inside: avoid; /* evita quebras dentro do parágrafo */
-  }
-
-  .section {
-    page-break-inside: avoid; /* evita quebra dentro da seção */
-  }
-
-  .section:last-child {
-    page-break-after: avoid; /* impede quebra depois da última seção */
-  }
-}
-
