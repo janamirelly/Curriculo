@@ -2,7 +2,7 @@ body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #f0f2f5;
   margin: 0;
-  padding: 20px;
+  padding: 15px;
   color: #333;
 }
 
@@ -10,7 +10,7 @@ body {
   background-color: #fff;
   max-width: 900px;
   margin: auto;
-  padding: 40px;
+  padding: 30px;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
@@ -21,18 +21,19 @@ h1 {
   color: #005b96;
 }
 
-.section-title {
-  font-size: 1.5rem;
-  margin-bottom: 15px;
+h2 {
+  font-size: 1.4rem;
+  margin-top: 20px;
+  margin-bottom: 8px;
   color: #005b96;
   border-bottom: 2px solid #e0e0e0;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
   font-weight: 600;
 }
 
 .tagline {
-  font-size: 1.1em;
-  margin-bottom: 15px;
+  font-size: 1em;
+  margin-bottom: 10px;
   color: #222;
 }
 
@@ -43,10 +44,6 @@ h1 {
   list-style: none;
   padding: 0;
   margin: 0 0 20px 0;
-}
-
-.contact-links li {
-  margin-right: 15px;
 }
 
 .contact-links a {
@@ -60,160 +57,57 @@ h1 {
 }
 
 .section {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 
-.section h2 {
-  color: #005b96;
-  border-bottom: 2px solid #e0e0e0;
-  padding-bottom: 5px;
-  margin-bottom: 15px;
-  font-weight: 600;
+p,
+li {
+  margin-bottom: 6px;
+  line-height: 1.4;
 }
 
-.section ul {
-  padding-left: 20px;
+ul {
+  padding-left: 18px;
+  margin: 0;
 }
 
-.section ul li {
-  margin-bottom: 10px;
-  line-height: 1.6;
+.project-list {
+  list-style: none; /* remove bullets */
+  padding-left: 0;
+  margin: 0;
 }
 
-a {
-  color: #0077cc;
-  text-decoration: none;
-}
-
-a:hover {
-  text-decoration: underline;
-}
-
-.links {
-  font-size: 0.95em;
-  margin-bottom: 30px;
-}
-
-.links a {
-  color: #0077cc;
-  text-decoration: none;
-  margin-right: 10px;
-}
-
-.links a:hover {
-  text-decoration: underline;
-}
-
-.institution-reference {
-  font-size: 0.95em;
-  color: #555;
-  margin-top: 12px;
-  line-height: 1.5;
-}
-
-.cards-container {
-  display: flex;
-  gap: 15px; /* Espaço entre os cards */
-  flex-wrap: wrap; /* Faz os cards quebrarem para a próxima linha se necessário */
-}
-
-.card {
-  background-color: #f5f5f5; /* Cor leve de fundo */
-  padding: 15px;
+.project-list li {
+  background-color: #f5f5f5; /* mantém a cor dos cards */
+  padding: 10px;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  flex: 1 1 250px; /* Largura mínima 250px e se adapta ao espaço */
-  display: flex;               /* transforma o card em flex container */
-  flex-direction: column;      /* organiza conteúdo em coluna */
-  justify-content: space-between; /* empurra o link para o final */
+  margin-bottom: 10px;
 }
-.card a {
+
+.project-list li a {
+  display: block;
   color: #0066cc;
   text-decoration: none;
-  margin-top: auto;
+  margin-top: 5px;
 }
-.card a:hover {
+
+.project-list li a:hover {
   text-decoration: underline;
-}
-
-@media only screen and (max-width: 600px) {
-  body {
-    padding: 10px;
-  }
-
-  .container {
-    padding: 20px;
-    border-radius: 8px;
-  }
-
-  h1 {
-    font-size: 1.8em;
-  }
-
-  .tagline {
-    font-size: 1em;
-  }
-
-  .links {
-    font-size: 0.9em;
-    flex-direction: column;
-  }
-
-  .links a {
-    display: inline-block;
-    margin: 5px 5px 5px 0;
-  }
-
-  .section h2 {
-    font-size: 1.2em;
-  }
-
-  .section ul {
-    padding-left: 15px;
-  }
-
-  .contact-links {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .contact-links li {
-    margin-right: 0;
-    margin-bottom: 10px;
-  }
 }
 
 @media print {
   body {
-    zoom: 90%; /* Ajusta o tamanho do conteúdo (pode testar 80-95%) */
+    zoom: 90%;
   }
 
   .container {
-    page-break-inside: avoid; /* evita quebras de página dentro do container */
-  }
-
-  .section,
-  .competencias,
-  .soft-skills {
-    page-break-inside: avoid; /* impede que essas seções se quebrem no meio */
-  }
-
-  /* Remove sombras e fundos para economizar tinta e deixar mais clean */
-  .container {
+    page-break-inside: avoid;
     box-shadow: none;
     background: white;
   }
-}
-@media print {
-  p {
-    page-break-inside: avoid; /* evita quebras dentro do parágrafo */
-  }
 
   .section {
-    page-break-inside: avoid; /* evita quebra dentro da seção */
-  }
-
-  .section:last-child {
-    page-break-after: avoid; /* impede quebra depois da última seção */
+    page-break-inside: avoid;
   }
 }
