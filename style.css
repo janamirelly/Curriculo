@@ -1,5 +1,5 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   background: #f0f2f5;
   margin: 0;
   padding: 20px;
@@ -12,13 +12,22 @@ body {
   margin: auto;
   padding: 40px;
   border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2rem;
   margin-bottom: 5px;
   color: #005b96;
+}
+
+.section-title {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  color: #005b96;
+  border-bottom: 2px solid #e0e0e0;
+  padding-bottom: 5px;
+  font-weight: 600;
 }
 
 .tagline {
@@ -102,6 +111,26 @@ a:hover {
   line-height: 1.5;
 }
 
+.cards-container {
+  display: flex;
+  gap: 15px; /* Espaço entre os cards */
+  flex-wrap: wrap; /* Faz os cards quebrarem para a próxima linha se necessário */
+}
+
+.card {
+  background-color: #f5f5f5; /* Cor leve de fundo */
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  flex: 1 1 250px; /* Largura mínima 250px e se adapta ao espaço */
+}
+.card a {
+  color: #0066cc;
+  text-decoration: none;
+}
+.card a:hover {
+  text-decoration: underline;
+}
 
 @media only screen and (max-width: 600px) {
   body {
